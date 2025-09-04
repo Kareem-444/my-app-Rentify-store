@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Kareem-444.github.io/my-app-Rentify-store",
   "name": "tool-rental-platform",
   "version": "1.0.0",
   "description": "A platform for renting tools and supplies.",
@@ -6,7 +7,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "firebase": "^12.2.1",
@@ -22,6 +25,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^5.0.1",
     "autoprefixer": "^10.4.21",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.12",
     "vite": "^7.1.3"
