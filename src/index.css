@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-emerald-950 text-white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply text-amber-400 font-bold;
+}
+
+a {
+  @apply text-amber-400 hover:text-amber-300 transition-colors duration-150 underline-offset-2;
+}
+
+button, .btn {
+  @apply bg-amber-400 text-emerald-950 font-semibold rounded-full px-6 py-2 shadow hover:bg-amber-300 hover:text-emerald-900 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-400;
+}
+
+.card {
+  @apply bg-emerald-800/90 rounded-xl shadow-lg p-6 hover:bg-emerald-700 transition;
+}
+
+input, select, textarea {
+  @apply bg-emerald-900 text-white border border-teal-400 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400 placeholder:text-slate-300;
+}
+
+.footer {
+  @apply bg-emerald-800 text-slate-100 text-center p-4;
+}
